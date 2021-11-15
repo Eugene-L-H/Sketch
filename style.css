@@ -7,23 +7,28 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #play-area {
   display: flex;
   flex-flow: row wrap;
-  height: 624px;
-  width: 624px;
+  height: 496px;
+  width: 752px;
   margin: auto auto;
-  padding: 10px;
 }
 
 .pixel {
-  height: 36.5px;
-  width: 36.5px;
-  border: solid 0.25px black;
-}
-
-div.pixel:hover {
-  color: red;
+  margin: 0;
+  padding: 0;
+  height: 8px;
+  width: 8px;
 }
 
 .filled {

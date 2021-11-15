@@ -1,6 +1,6 @@
 const playArea = document.querySelector('#play-area');
 
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i < 5828; i++) {
   let pixel = document.createElement('div');
   pixel.classList.add('pixel');
 
