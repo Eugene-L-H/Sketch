@@ -9,6 +9,7 @@ body {
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url('background.jpg');
@@ -17,11 +18,12 @@ body {
 }
 
 #play-area {
+  position: absolute;
   display: flex;
   flex-flow: row wrap;
   height: 496px;
   width: 752px;
-  margin: auto auto;
+  margin-top: 4px;
 }
 
 .pixel {
@@ -33,4 +35,10 @@ body {
 
 .filled {
   background-color: black;
+}
+
+#clear {
+  margin-top: 625px;
+  padding: 10px;
+  border-radius: 25px;
 }
