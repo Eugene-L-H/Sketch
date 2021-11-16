@@ -30,16 +30,19 @@ clearButton.addEventListener('click', () => {
 
 // Clear play-area and change resolutions.
 lowRes.addEventListener('click', () => {
+  buttonSelect(lowRes, medRes, highRes);
   currentResolution = 16;
   changeRes(16);
 });
 
 medRes.addEventListener('click', () => {
+  buttonSelect(medRes, lowRes, highRes);
   currentResolution = 32;
   changeRes(32);
 });
 
 highRes.addEventListener('click', () => {
+  buttonSelect(highRes, medRes, lowRes);
   currentResolution = 64;
   changeRes(64);
 });

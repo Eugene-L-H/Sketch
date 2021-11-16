@@ -37,3 +37,9 @@ function changeRes(resolution) {
   clearPlay();
   populate(pixelDensity, pixelSize);
 }
+
+function buttonSelect(on, off1, off2) {
+  on.classList.add('selected');
+  off1.classList.remove('selected');
+  off2.classList.remove('selected');
+}
