@@ -18,6 +18,13 @@ body {
   background-color: black;
 }
 
+.signature {
+  color: gold;
+  font-style: italic;
+  font-size: 16;
+  margin-bottom: 600px;
+}
+
 #play-area {
   position: absolute;
   display: flex;
@@ -25,6 +32,13 @@ body {
   height: 500px;
   width: 750px;
   margin-top: 4px;
+
+  /*disable grab-hand on cursor*/
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #play-area:hover {
@@ -35,17 +49,38 @@ body {
   pointer-events: none;
 }
 
-/* .pixel {
-  height: 7.8125px;
-  width: 7.8125px;
-} */
-
 .filled {
   background-color: black;
 }
 
-#clear {
+#clear,
+#low,
+#medium,
+#high {
+  position: absolute;
   margin-top: 600px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 25px;
+}
+
+#low,
+#medium,
+#high {
+  margin-right: 890px;
+  color: #fff;
+}
+
+#low {
+  background-color: blue;
+  margin-bottom: 800px;
+}
+
+#medium {
+  background-color: orange;
+  margin-bottom: 600px;
+}
+
+#high {
+  background-color: green;
+  margin-bottom: 400px;
 }
