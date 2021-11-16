@@ -22,8 +22,8 @@ body {
   position: absolute;
   display: flex;
   flex-flow: row wrap;
-  height: 496px;
-  width: 752px;
+  height: 500px;
+  width: 750px;
   margin-top: 4px;
 }
 
@@ -35,12 +35,10 @@ body {
   pointer-events: none;
 }
 
-.pixel {
-  margin: 0;
-  padding: 0;
-  height: 8px;
-  width: 8px;
-}
+/* .pixel {
+  height: 7.8125px;
+  width: 7.8125px;
+} */
 
 .filled {
   background-color: black;
